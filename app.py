@@ -1,19 +1,13 @@
 
 # coding: utf-8
 
-# In[1]:
 
 import os
 import numpy as np
 import pandas as pd
 from flask import Flask, render_template, request, redirect
-import matplotlib
-import matplotlib.pyplot as plt
-import sklearn.cross_validation
 import requests
-from fbprophet import Prophet
 import datetime
-from pandas.tseries.holiday import USFederalHolidayCalendar
 
 import bokeh
 from bokeh.plotting import figure
@@ -21,9 +15,6 @@ from bokeh.io import show,output_notebook
 from bokeh.embed import components
 from bokeh.models import HoverTool
 bv = bokeh.__version__
-
-
-# In[73]:
 
 #create flask instance
 app = Flask(__name__)
@@ -126,7 +117,6 @@ def graph():
                                )
 
 
-# In[ ]:
 
 if __name__ == '__main__':
     
@@ -134,8 +124,6 @@ if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
 
-
-# In[ ]:
 
 
 
