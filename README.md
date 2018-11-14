@@ -1,2 +1,2 @@
 # BlueDay_App
-This is an app which predict sales, transactions, and visits.
+This is an app which predicts sales, transactions, and visits.
