@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Sample Projections for Sales, Transactions, and Visits</title>
+		<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}'>
+	</head>
+	<div class=page>
+  			<h1>Sample Projections for Sales, Transactions, and Visits</h1>
+  			<div class=metanav>
+  				<br>
+    			<p align="left">This is a demo for time series projection using historical training data from 2014-02-14 to 2015-12-09. The outputs are projections for sales, transactions, and visits in the next two weeks from start date versus their actual values. This could also be used for future analysis with the same underlying models. 
+    			<br>
+    			<br>
+    			<br>The sample start dates are:
+    				<ul align="left" >
+  						<li>2014-05-01 (this is a normal prediction period with no national holidays)</li>
+  						<li>2014-11-14 (this is a prediction period with holidays, e.g. Black Friday, Thanksgiving)</li>
+  						<li>2015-06-17 (this is a prediction period where the maximum of sales happens)</li>
+					</ul>
+				<br> Please choose one date mentioned above and enter below to see the results:
+    			</p>
+    			<form id='input' method='post' action='index'>	
+	  			<p>
+					Start Date: <input type='text' name='start_date' />
+	  			</p>
+	  			<p>
+	    			<input type="submit" value="Submit">
+	  			</p>  		
+				</form>
+  			</div>
+  			<div align="center">
+  			</div>
+		</div>
+	</body>
+</html>
